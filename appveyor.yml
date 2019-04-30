@@ -3,9 +3,9 @@ configuration: Release
 
 install:
   - cd C:\projects\freecad
-  - appveyor DownloadFile https://github.com/FreeCAD/FreeCAD-ports-cache/releases/download/v0.17/FreeCADLibs_11.5.1_x64_VC12.7z
-  - powershell -Command 7z x FreeCADLibs_11.5.1_x64_VC12.7z > nul &&
-      ren FreeCADLibs_11.5_x64_VC12 FreeCADLibs
+  - appveyor DownloadFile https://github.com/FreeCAD/FreeCAD-ports-cache/releases/download/v0.18/FreeCADLibs_11.11_x64_VC12.7z
+  - powershell -Command 7z x FreeCADLibs_11.11_x64_VC12.7z > nul &&
+      ren FreeCADLibs_11.11_x64_VC12 FreeCADLibs
   - dir
 
 before_build:
